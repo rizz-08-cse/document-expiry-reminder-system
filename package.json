@@ -1,0 +1,23 @@
+{
+  "name": "document-expiry-reminder-system",
+  "version": "1.0.0",
+  "description": "Production-oriented Document Expiry Reminder System with Asia/Kolkata persistent cron and MSG91 SMS",
+  "scripts": {
+    "dev:server": "npm --prefix server run dev",
+    "dev:client": "npm --prefix client run dev",
+    "start:server": "npm --prefix server start",
+    "build:client": "npm --prefix client run build",
+    "test": "npm --prefix server test"
+  },
+  "keywords": [
+    "document-expiry",
+    "reminder-system",
+    "node-cron",
+    "msg91",
+    "react",
+    "express",
+    "mongodb"
+  ],
+  "author": "",
+  "license": "MIT"
+}
