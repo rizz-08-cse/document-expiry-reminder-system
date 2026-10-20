@@ -1,7 +1,8 @@
 # Project Status: Document Expiry Reminder System
 
-## Current Phase: Phase 6 Completed & Ready for Deployment / Handover
-- **Status:** All Application Code, Engine, UI & Tests Complete
+## Current Phase: Phase 6 & Phase 7 (Repository Pushed & Cloud Deployment Ready)
+- **Status:** GitHub Repository Live & Ready for Hosting Connection
+- **Repository URL:** https://github.com/rizz-08-cse/document-expiry-reminder-system
 - **Last Updated:** 2026-10-20
 
 ---
@@ -61,13 +62,22 @@
 
 ---
 
-### Phase 6: Git Repository & Secret Audit
-- [x] Initialized Git repository
-- [x] Scanned workspace: 0 exposed secrets or credentials committed (only `.env.example` templates)
-- [x] Created clean initial commit (`3c85413`) with all 62 source files
+### Phase 6: Git Repository & Push
+- [x] Git repository initialized and set to branch `main`
+- [x] Zero secrets or sensitive files committed
+- [x] Successfully pushed to https://github.com/rizz-08-cse/document-expiry-reminder-system.git
 
 ---
 
-### Phase 7 & 8: Deployment & Handover Readiness
-- Ready for GitHub push (requires user authorization and preferred repo name/visibility).
-- Ready for Vercel (frontend) and Render (backend) deployment with MongoDB Atlas.
+### Phase 7: Live Cloud Deployment Checklist
+1. **Render (Backend API):**
+   - Connect GitHub repo: `rizz-08-cse/document-expiry-reminder-system`
+   - Root directory: `server`
+   - Build command: `npm install`
+   - Start command: `npm start`
+   - Set environment variables (`PORT=10000`, `NODE_ENV=production`, `MONGODB_URI`, `JWT_SECRET`, `TIMEZONE=Asia/Kolkata`, `CLIENT_URL`)
+2. **Vercel (Frontend Client):**
+   - Import repository: `rizz-08-cse/document-expiry-reminder-system`
+   - Root directory: `client`
+   - Framework preset: `Vite`
+   - Set environment variable (`VITE_API_BASE_URL=https://<your-render-backend-url>/api`)
