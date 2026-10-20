@@ -5,7 +5,7 @@ const { connectDB, disconnectDB } = require('./config/db');
 const { seedInitialData } = require('./utils/seeder');
 const reminderScheduler = require('./services/reminderScheduler');
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 5050;
 
 async function startServer() {
   try {
